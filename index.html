@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Suggestion App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Welcome to Flavourio</h1>
+      <img src="logo.png" alt="Logo" class="logo">
+      <p>Get random meal suggestions to make your cooking decisions easier!</p>
+      <input type="text" id="categoryInput" placeholder="Enter a meal category">
+      <button id="searchButton" onclick="searchByCategory()">Search</button>
+      <div id="mealContainer"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="random-meal">
+      <h2>Random Meal</h2>
+      <div id="randomMeal">
+        <!-- Display random meal image and name -->
+      </div>
+    </section>
+
+    <!-- Searched Meal Images Section -->
+<section class="searched-meals">
+  <h2>Searched Meals</h2>
+  <p id="searchedMealText">These are the searched meal category images.</p>
+
+  <div class="meal-container" id="searchedMealContainer">
+      <!-- Searched meal images will be displayed here -->
+  </div>
+</section>
+
+  <!-- Modal for displaying meal ingredients -->
+  <div id="mealModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Meal Ingredients</h2>
+      <ul id="mealIngredients">
+        <!-- Display meal ingredients here -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
